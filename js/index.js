@@ -16,7 +16,7 @@ function gameOver() {
     resertBtn.style.display = "block"
 }
 
-rollBtn.addEventListener('click', function() {
+rollBtn.addEventListener('click', () => {
     const randomNumber = Math.floor(Math.random() * 6) + 1
 
     if (player1Turn) {
@@ -42,13 +42,13 @@ rollBtn.addEventListener('click', function() {
         message.textContent = "Player 2 has won! 🎉"
         gameOver()
     }
-
+    // Swaping Players
     player1Turn = !player1Turn
 
 })
 
 
-resertBtn.addEventListener('click', function () {
+resertBtn.addEventListener('click', () => {
     restartGame()
 })
 
@@ -61,7 +61,7 @@ function restartGame() {
     player1Dice.textContent = "-"
     player2Dice.textContent = "-"
     message.textContent = "Player 1 Turn"
-    resetBtn.style.display = "none"
+    resertBtn.style.display = "none"
     rollBtn.style.display = "block"
     player2Dice.classList.remove("active")
     player1Dice.classList.add("active")
