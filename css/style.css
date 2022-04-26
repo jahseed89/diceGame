@@ -73,7 +73,7 @@ button:focus {
   display: none; }
   .popup-wraper #resetBtn {
     margin-top: 20rem;
-    background-color: #ffaaa5; }
+    background-color: #a8e6cf; }
 
 @media (max-width: 600px) {
   .container {
@@ -83,4 +83,12 @@ button:focus {
     .container .dice {
       width: 80px;
       height: 80px;
-      font-size: 50px; } }
+      font-size: 50px; }
+  #restBtn {
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 1rem;
+    margin: 20px auto; }
+  #winner {
+    font-size: 1.5rem;
+    padding-top: 2rem; } }

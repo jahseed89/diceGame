@@ -91,10 +91,9 @@ button:focus {
 
     #resetBtn {
         margin-top: 20rem;
-        background-color: $color4;
+        background-color: $color1;
     }
 }
-
 
 
 @media (max-width: 600px) {
@@ -109,5 +108,17 @@ button:focus {
             height: 80px;
             font-size: 50px;
         }
+    }
+
+    #restBtn {
+        color: #fff;
+        padding: 15px 20px;
+        font-size: 1rem;
+        margin: 20px auto;
+    }
+
+    #winner {
+        font-size: 1.5rem;
+        padding-top: 2rem;
     }
 }
