@@ -10,10 +10,13 @@ const player2Scoreboard = document.getElementById('player2Scoreboard')
 const msssage = document.getElementById('message')
 const rollBtn = document.getElementById('rollBtn')
 const resertBtn = document.getElementById('resetBtn')
+const winnerContainer = document.querySelector('.popup-wraper')
+const winnerMsg = document.getElementById('winner')
+const container = document.querySelector('.container')
 
 function gameOver() {
-    rollBtn.style.display = 'none'
-    resertBtn.style.display = "block"
+    container.style.display = 'none'
+    winnerContainer.style.display = "block"
 }
 
 rollBtn.addEventListener('click', () => {
@@ -36,11 +39,12 @@ rollBtn.addEventListener('click', () => {
     }
 
     if (player1Score >= 60) {
-        message.textContent = "Player 1 has won! 🥳"
         gameOver()
+        winnerMsg.textContent = "Player 1 has won! 🥳"
+
     } else if (player2Score >= 60) {
-        message.textContent = "Player 2 has won! 🎉"
         gameOver()
+        winnerMsg.textContent = "Player 2 has won! 🎉"
     }
     // Swaping Players
     player1Turn = !player1Turn
@@ -53,6 +57,8 @@ resertBtn.addEventListener('click', () => {
 })
 
 function restartGame() {
+    winnerContainer.style.display = 'none'
+    container.style.display = 'block'
     player1Score = 0
     player2Score = 0
     player1Turn = true
@@ -61,7 +67,6 @@ function restartGame() {
     player1Dice.textContent = "-"
     player2Dice.textContent = "-"
     message.textContent = "Player 1 Turn"
-    resertBtn.style.display = "none"
     rollBtn.style.display = "block"
     player2Dice.classList.remove("active")
     player1Dice.classList.add("active")

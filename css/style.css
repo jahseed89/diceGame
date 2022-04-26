@@ -11,11 +11,13 @@ body {
   color: black; }
 
 .container {
+  width: 70%;
   max-width: 600px;
   text-align: center;
   margin: 0 auto;
   background-color: #fff;
   box-shadow: -2px 6px 18px 3px rgba(0, 0, 0, 0.75);
+  border-radius: 1rem;
   padding: 20px 50px; }
   .container #message {
     margin: 15px 0;
@@ -54,9 +56,24 @@ button {
 button:focus {
   outline: none; }
 
-#resetBtn {
-  background-color: #ffaaa5;
+.popup-wraper {
+  background-image: url("https://previews.123rf.com/images/wisaanu99/wisaanu991507/wisaanu99150700003/42541245-winner-podium-cartoon-concept.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
+  width: 75%;
+  height: 70%;
+  max-width: 650px;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  border-radius: 1rem;
+  justify-content: space-between;
   display: none; }
+  .popup-wraper #resetBtn {
+    margin-top: 20rem;
+    background-color: #ffaaa5; }
 
 @media (max-width: 600px) {
   .container {
