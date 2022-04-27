@@ -80,6 +80,8 @@ button:focus {
     font-size: 10px;
     max-width: 90%;
     padding: 20px 50px; }
+    .container .title {
+      font-size: 10px; }
     .container .dice {
       width: 80px;
       height: 80px;
